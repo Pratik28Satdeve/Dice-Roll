@@ -1,0 +1,91 @@
+<html>
+<head>
+	<script>
+		function dice()
+			{
+			
+				var random= Math.random()*(6-1)+1;
+				var ans=Math.round(random);
+				document.getElementById("DiceRoll").innerHTML="Your Dice Number :- "+ans;
+				console.log('number='+ans);
+
+				if(ans==1){
+					
+					document.getElementById("roll").src="https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_1-512.png"; 
+					}
+
+				if(ans==2){
+					
+					document.getElementById("roll").src="https://creative.colorado.edu/~cola4504/web/img/dice-2.png";					}
+
+				if(ans==3){
+					
+					document.getElementById("roll").src="https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_3-512.png"; 
+					}
+
+				if(ans==4){
+					
+					document.getElementById("roll").src="https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_4-512.png"; 
+					}
+
+				if(ans==5){
+					
+					document.getElementById("roll").src="https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_5-512.png"; 
+					}
+
+				if(ans==6){
+					
+					document.getElementById("roll").src="https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_6-512.png"; 
+					}
+			}
+	</script>
+
+	<style>
+		
+			
+		body{
+			background-image:url('https://www.wargamer.com/wp-content/uploads/2021/02/best-strategy-board-games-root-1-900x506.jpg');
+		}
+		.img{
+			text-align:center;
+			margin-left:30%;
+			margin-right:30%;
+			background-color:tomato;
+		}
+		.button{
+			margin-left:45%;
+			text-align:center;
+			width:200px;
+			height:80px;
+			background-color:black;
+			color:white;
+			border-radius:100px 100px 1000px 1000px;
+			font-size:30px;
+			border:4px solid white;
+		}
+		.text{
+			height=40px;
+			width=400px;
+			background-color-purple;
+			color-white;
+			text-align:center;
+			
+		}
+	</style>
+
+</head>
+<body>
+	<br><br>
+	
+	<div class="img">
+	<img src="https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_1-512.png" id="roll" height = "300px"/>
+	</div>
+        <br><br><br>
+	<button class= "button" onclick="dice();">
+		Play Dice</button>
+	<br><br><br>
+	<div class="text">
+	<h1 style="color:white;background-color:purple" id="DiceRoll"></h1></div>
+	<br><br>
+</body>
+</html>
